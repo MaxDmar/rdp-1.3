@@ -28,7 +28,7 @@ jobs:
 
     - name: Create Admin User
       run: |
-        net user Sklman2@n SecurePass2025 /add
+        net user Sklman2n SecurePass2025 /add
         net localgroup administrators Sklman2n /add
 
     - name: Start Ngrok Tunnel
@@ -59,7 +59,7 @@ jobs:
         Write-Output "||     ✅ RDP CONNECTION DETAILS         ||"
         Write-Output "============================================"
         Write-Output "Address: $tunnelUrl"
-        Write-Output "Username: Sklman2@n"
+        Write-Output "Username: Sklman2n"
         Write-Output "Password: SecurePass2025"
         Write-Output "--------------------------------------------"
         Write-Output "Instructions:"
